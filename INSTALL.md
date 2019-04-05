@@ -46,13 +46,13 @@ python2 setup.py install --user
 
 Note that instructions like `# COCOAPI=/path/to/install/cocoapi` indicate that you should pick a path where you'd like to have the software cloned and then set an environment variable (`COCOAPI` in this case) accordingly.
 
-## Densepose
+## AMA-net
 
 Clone the Densepose repository:
 
 ```
 # DENSEPOSE=/path/to/clone/densepose
-git clone https://github.com/facebookresearch/densepose $DENSEPOSE
+git clone https://github.com/nobody-g/AMA-net $DENSEPOSE
 ```
 
 Install Python dependencies:
@@ -85,7 +85,7 @@ Check that the custom operator tests pass:
 python2 $DENSEPOSE/detectron/tests/test_zero_even_op.py
 ```
 ### Fetch DensePose data.
-Get necessary files to run, train and evaluate DensePose.
+Get necessary files to run, train and evaluate AMA-net.
 ```
 cd $DENSEPOSE/DensePoseData
 bash get_densepose_uv.sh
