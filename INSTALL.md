@@ -1,6 +1,6 @@
 # Installing DensePose
 
-The DensePose-RCNN system is implemented within the [`detectron`](https://github.com/facebookresearch/Detectron) framework. This document is based on the Detectron installation instructions, for troubleshooting please refer to the [`detectron installation document`](https://github.com/facebookresearch/Detectron/blob/master/INSTALL.md).
+The AMA-net is implemented within the [`detectron`](https://github.com/facebookresearch/Detectron) framework and [`DensePose`](https://github.com/facebookresearch/Densepose). This document is based on the Detectron installation instructions, for troubleshooting please refer to the [`detectron installation document`](https://github.com/facebookresearch/Detectron/blob/master/INSTALL.md).
 
 **Requirements:**
 
