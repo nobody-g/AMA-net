@@ -4,7 +4,7 @@
 AMA-net is implemented in the [Detectron](https://github.com/facebookresearch/Detectron) framework and [DensePose](https://github.com/facebookresearch/Densepose) framework and is powered by [Caffe2](https://github.com/caffe2/caffe2).
 In this repository, we provide the code to train and evaluate AMA-net. 
 <div align="center">
-  <img src="https://stduestceducn-my.sharepoint.com/:b:/g/personal/yuyuguo_std_uestc_edu_cn/EexN3N2GW5FElBjXgUlZz3UBDZQfNgXij2dHKGoB70CUnw?e=qLKf9w" width="700px" />
+  <img src="https://github.com/nobody-g/AMA-net/blob/master/logfile/Mutli-head.pdf" width="700px" />
 </div>
 ## Installation
 
