@@ -1,6 +1,6 @@
 # Using Detectron
 
-This document provides brief tutorials covering DensePose for inference and training on the DensePose-COCO dataset.
+This document provides brief tutorials covering AMA-net for inference and training on the DensePose-COCO dataset.
 This document is a modified version of the [`detectron/GETTING_STARTED.md`](https://github.com/facebookresearch/Detectron/blob/master/GETTING_STARTED.md).
 
 - For general information about DensePose, please see [`README.md`](README.md).
@@ -36,12 +36,12 @@ python2 tools/test_net.py \
 
 ## Training a Model
 
-This example shows how to train a model using the DensePose-COCO dataset. The model will be an end-to-end trained DensePose-RCNN using a ResNet-50-FPN backbone. 
+This example shows how to train a model using the DensePose-COCO dataset. The model will be an end-to-end trained AMA-net using a ResNet-50-FPN backbone. 
 
 ```
 python2 tools/train_net.py \
     --cfg configs/DensePose_ResNet50_FPN_single_GPU.yaml \
     OUTPUT_DIR /tmp/detectron-output
 ```
-The models we have provided in the model zoo are trained using 8 gpus. As in any  Detectron configs, we use linear scaling rule to adjust learning schedules. Please refer to the following paper: [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/abs/1706.02677). We also provide learning rate and number of iterations for varying number of GPUs.
+
 
