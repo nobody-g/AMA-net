@@ -21,7 +21,7 @@ python2 tools/test_net.py \
 
 ## Training a Model
 
-This example shows how to train a model using the DensePose-COCO dataset. The model will be an end-to-end trained AMA-net using a ResNet-50-FPN backbone. 
+This example shows how to train a model using the DensePose-COCO dataset. The model will be an end-to-end trained AMA-net with a ResNet-50-FPN backbone. 
 
 ```
 python2 tools/train_net.py \
