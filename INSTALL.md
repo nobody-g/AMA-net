@@ -102,15 +102,15 @@ bash get_eval_data.sh
 
 Create a symlink for the COCO dataset in your `datasets/data` folder.
 ```
-ln -s /path/to/coco $DENSEPOSE/detectron/datasets/data/coco
+ln -s /path/to/coco $AMANET/detectron/datasets/data/coco
 ```
 
 Create symlinks for the DensePose-COCO annotations
 
 ```
-ln -s $DENSEPOSE/DensePoseData/DensePose_COCO/densepose_coco_2014_minival.json $DENSEPOSE/detectron/datasets/data/coco/annotations/
-ln -s $DENSEPOSE/DensePoseData/DensePose_COCO/densepose_coco_2014_train.json $DENSEPOSE/detectron/datasets/data/coco/annotations/
-ln -s $DENSEPOSE/DensePoseData/DensePose_COCO/densepose_coco_2014_valminusminival.json $DENSEPOSE/detectron/datasets/data/coco/annotations/
+ln -s $AMANET/DensePoseData/DensePose_COCO/densepose_coco_2014_minival.json $AMANET/detectron/datasets/data/coco/annotations/
+ln -s $AMANET/DensePoseData/DensePose_COCO/densepose_coco_2014_train.json $AMANET/detectron/datasets/data/coco/annotations/
+ln -s $AMANET/DensePoseData/DensePose_COCO/densepose_coco_2014_valminusminival.json $AMANET/detectron/datasets/data/coco/annotations/
 ```
 
 Your local COCO dataset copy at `/path/to/coco` should have the following directory structure:
