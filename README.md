@@ -2,8 +2,9 @@
 **Adaptive Multi-Path Aggregation for Human DensePose Estimation In The Wild**
 
 AMA-net is implemented in the [Detectron](https://github.com/facebookresearch/Detectron) framework and [DensePose](https://github.com/facebookresearch/Densepose) framework and is powered by [Caffe2](https://github.com/caffe2/caffe2).
-![image](https://github.com/nobody-g/AMA-net/tree/master/logfile/Mutli-head.pdf)
-
+<div align="center">
+  <img src="https://github.com/nobody-g/AMA-net/tree/master/logfile/Mutli-head.png" width="700px" />
+</div>
 
 In this repository, we provide the code to train and evaluate AMA-net. 
 
