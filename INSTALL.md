@@ -1,4 +1,4 @@
-# Installing DensePose
+# Installing AMA-net
 
 The AMA-net is implemented within the [`detectron`](https://github.com/facebookresearch/Detectron) framework and [`DensePose`](https://github.com/facebookresearch/Densepose) project. This document is based on the Detectron installation instructions, for troubleshooting please refer to the [`detectron installation document`](https://github.com/facebookresearch/Detectron/blob/master/INSTALL.md).
 
