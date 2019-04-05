@@ -6,20 +6,6 @@ This document is a modified version of the [`detectron/GETTING_STARTED.md`](http
 - For general information about DensePose, please see [`README.md`](README.md).
 - For installation instructions, please see [`INSTALL.md`](INSTALL.md).
 
-## Inference with Pretrained Models
-
-#### 1. Directory of Image Files
-To run inference on a an image (or a directory of image files), you can use the `infer_simple.py` tool. In this example, we're using an end-to-end trained AMA-net model with a ResNet-101-FPN backbone from the model zoo:
-```
-python2 tools/infer_simple.py \
-    --cfg configs/DensePose_ResNet101_FPN_s1x-e2e.yaml \
-    --output-dir DensePoseData/infer_out/ \
-    --image-ext jpg \
-    --wts https://s3.amazonaws.com/densepose/DensePose_ResNet101_FPN_s1x-e2e.pkl \
-    DensePoseData/demo_data/demo_im.jpg
-```
-
-DensePose should automatically download the model from the URL specified by the `--wts` argument. This tool will output visualizations of the detections in PDF format in the directory specified by `--output-dir`. Also, it will output two images `*_IUV.png` and `*_INDS.png` which consists of I,U, V channels and segmented instance indices respectively. 
 
 ## Testing with Pretrained Models
 
@@ -28,8 +14,8 @@ This example shows how to run an end-to-end trained AMA-net model from the model
 
 ```
 python2 tools/test_net.py \
-    --cfg configs/DensePose_ResNet101_FPN_s1x-e2e.yaml \
-    TEST.WEIGHTS https://s3.amazonaws.com/densepose/DensePose_ResNet101_FPN_s1x-e2e.pkl \
+    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_dp_s1x-e2e_all.yaml \
+    TEST.WEIGHTS <The path of Pretrained model> \
     NUM_GPUS 1
 ```
 
@@ -39,7 +25,7 @@ This example shows how to train a model using the DensePose-COCO dataset. The mo
 
 ```
 python2 tools/train_net.py \
-    --cfg configs/DensePose_ResNet50_FPN_single_GPU.yaml \
+    --cfg configs/coco_exp_configs/DensePose_ResNet50_FPN_cascade_mask_dp_s1x-e2e_all.yaml \
     OUTPUT_DIR /tmp/detectron-output
 ```
 
