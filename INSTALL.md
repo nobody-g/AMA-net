@@ -48,46 +48,46 @@ Note that instructions like `# COCOAPI=/path/to/install/cocoapi` indicate that y
 
 ## AMA-net
 
-Clone the Densepose repository:
+Clone the AMA-net repository:
 
 ```
-# DENSEPOSE=/path/to/clone/densepose
-git clone https://github.com/nobody-g/AMA-net $DENSEPOSE
+# AMANET=/path/to/clone/AMA-net
+git clone https://github.com/nobody-g/AMA-net $AMANET
 ```
 
 Install Python dependencies:
 
 ```
-pip install -r $DENSEPOSE/requirements.txt
+pip install -r $AMANET/requirements.txt
 ```
 
 Set up Python modules:
 
 ```
-cd $DENSEPOSE && make
+cd $AMANET && make
 ```
 
 Check that Detectron tests pass (e.g. for [`SpatialNarrowAsOp test`](tests/test_spatial_narrow_as_op.py)):
 
 ```
-python2 $DENSEPOSE/detectron/tests/test_spatial_narrow_as_op.py
+python2 $AMANET/detectron/tests/test_spatial_narrow_as_op.py
 ```
 
 Build the custom operators library:
 
 ```
-cd $DENSEPOSE && make ops
+cd $AMANET && make ops
 ```
 
 Check that the custom operator tests pass:
 
 ```
-python2 $DENSEPOSE/detectron/tests/test_zero_even_op.py
+python2 $AMANET/detectron/tests/test_zero_even_op.py
 ```
 ### Fetch DensePose data.
 Get necessary files to run, train and evaluate AMA-net.
 ```
-cd $DENSEPOSE/DensePoseData
+cd $AMANET/DensePoseData
 bash get_densepose_uv.sh
 ```
 For training, download the DensePose-COCO dataset:
