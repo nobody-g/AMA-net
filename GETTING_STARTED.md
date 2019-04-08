@@ -1,4 +1,4 @@
-# Using Detectron
+# Using AMA-net
 
 This document provides brief tutorials covering AMA-net for inference and training on the DensePose-COCO dataset.
 This document is a modified version of the [`detectron/GETTING_STARTED.md`](https://github.com/facebookresearch/Detectron/blob/master/GETTING_STARTED.md).
