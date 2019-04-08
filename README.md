@@ -9,7 +9,7 @@ In this repository, we provide the code to train and evaluate AMA-net.
 
 ## Installation
 
-Please find installation instructions for Caffe2 and DensePose in [`INSTALL.md`](INSTALL.md), a document based on the [Detectron](https://github.com/facebookresearch/Detectron) installation instructions.
+Please find installation instructions for Caffe2 and AMA-net in [`INSTALL.md`](INSTALL.md), a document based on the [Detectron](https://github.com/facebookresearch/Detectron) installation instructions.
 
 ## Inference-Training-Testing
 
